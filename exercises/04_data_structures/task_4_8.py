@@ -26,3 +26,8 @@
 """
 
 ip = "192.168.3.1"
+octets = ip.split(".")
+out1 = "{:<10}{:<10}{:<10}{:<10}\n".format(*octets)
+out2 = "{:08b}  {:08b}  {:08b}  {:08b}".format(int(octets[0]), int(octets[1]), int(octets[2]), int(octets[3]))
+
+print (out1+out2)

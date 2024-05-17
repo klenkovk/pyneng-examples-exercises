@@ -15,4 +15,6 @@
 проверять результат.
 """
 
+
 mac = "AAAA:BBBB:CCCC"
+print (''.join('{:04b}'.format(int(i, 16)) for i in mac if i !=":")) 
